@@ -1,6 +1,9 @@
 package com.abucarub.miguel.simplerunnable;
 
 public class RunnableMain {
+	
+	private static final int TIMES = 5;
+	
 	   public static void main(String[] args) {
 	        System.out.println("Executing program...");
 	        
@@ -29,7 +32,7 @@ public class RunnableMain {
 	            public void run() {
 	                
 	                // We are doing the same thing as with the SimpleRunnableImplementation class
-	                for (int i = 0; i < 5; i++) {
+	                for (int i = 0; i < TIMES; i++) {
 	                    System.out.println(Thread.currentThread().getName() +
 	                            "\twith Runnable: Inner class Runnable runs..." + i);
 	                }
